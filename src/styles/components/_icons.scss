@@ -1,0 +1,104 @@
+.icon {
+    position: relative;
+    &::before {
+        background-image: url('../img/sprites.svg');
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+
+    &--big {
+        &::before {
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    &--small {
+        &::before {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &--loop {
+        &::before {
+        background-position: 0 -34px;
+        }
+        
+    }
+
+    &--percent {
+        &::before {
+        background-position: -56px -34px;
+        }
+        
+    }
+
+    &--add-report {
+        &::before {
+        background-position: -112px -34px;
+        }
+        
+    }
+
+    &--mail {
+        &::before {
+        background-position: -168px -34px;
+        }
+        
+    }
+
+    &--currency {
+        &::before {
+        background-position: -221px -34px;
+        }
+        
+    }
+
+    &--qiwi {
+        &::before {
+        background-position: 0 -90px;
+        }
+        
+    }
+
+    &--yandex-money {
+        &::before {
+        background-position: -20px -90px;
+        }
+        
+    }
+
+    &--web-money {
+        &::before {
+        background-position: -40px -90px;
+        }
+        
+    }
+
+    &--email {
+        &::before {
+        background-position: -60px -90px;
+        }
+        
+    }
+
+    &--vk {
+        &::before {
+        background-position: -80px -90px;
+        }
+        
+    }
+
+    &--file {
+        &::before {
+        background-position: 0 -110px;
+        }
+        
+    }
+}

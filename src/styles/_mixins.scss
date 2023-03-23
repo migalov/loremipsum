@@ -1,0 +1,39 @@
+@use "vars";
+@use "functions";
+
+@mixin create-col($columns, $gap-column: 30px, $gap-row: $gap-column) {
+    display: grid;
+    grid-column-gap: #{$gap-column};
+    grid-row-gap: #{$gap-row};
+    grid-template-columns: repeat(#{$columns}, 1fr);
+}
+
+@mixin xs {
+    @media (#{ functions.maxScreen(xs) }) {
+        @content;
+    }
+}
+    
+@mixin sm {
+    @media (#{ functions.minScreen(sm) }) {
+        @content;
+    }
+}
+    
+@mixin md {
+    @media (#{ functions.minScreen(md) }) {
+        @content;
+    }
+}
+    
+@mixin lg {
+    @media (#{ functions.minScreen(lg) }) {
+        @content;
+    }
+}
+    
+@mixin xl {
+    @media (#{ functions.minScreen(xl) }) {
+        @content;
+    }
+}

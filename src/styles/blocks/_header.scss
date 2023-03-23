@@ -1,0 +1,17 @@
+header {
+    background: $dark-2;
+    padding: rem(34px) 0;
+
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    display: block;
+    background-image: url('../img/sprites.svg');
+    width: 252px;
+    height: 32px;
+}

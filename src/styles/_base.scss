@@ -1,0 +1,73 @@
+@use "vars";
+@use "functions";
+
+* {
+    box-sizing: vars.$box-sizing-base;
+
+    &:before,
+    &:after {
+        box-sizing: vars.$box-sizing-base;
+    }
+}
+
+html {
+    @if vars.$enable-smooth-scroll {
+        scroll-behavior: smooth;
+    }
+    font-size: vars.$font-size-base;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: vars.$font-family-base;
+    line-height: vars.$line-height-base;
+    color: $black;
+    background-color: $white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    min-width: #{ functions.screen(xxs) };
+}
+
+main {
+    flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $primary;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+}

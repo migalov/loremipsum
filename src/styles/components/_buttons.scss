@@ -1,0 +1,26 @@
+.btn {
+
+    display: inline-block;
+    border: 1px solid;
+    text-transform: uppercase;
+    font-size: rem(13px);
+    padding: 0.9em 0;
+    border-radius: .25rem;
+    min-width: rem(183px);
+    text-align: center;
+
+    &--primary {
+        background: $primary;
+        color: $white;
+    }
+
+    &--white {
+        background: $white;
+        color: $dark-4;
+    }
+
+    &--form {
+        font-size: rem(15px);
+    }
+    
+}

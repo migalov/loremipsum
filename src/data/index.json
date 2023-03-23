@@ -1,0 +1,81 @@
+[{
+    "title": "Главное меню",
+    "data": [
+        {
+            "title": "Бизнес",
+            "href": "#"
+        },
+        {
+            "title": "О нас",
+            "href": "#"
+        },
+        {
+            "title": "Цены",
+            "href": "#"
+        },
+        {
+            "title": "Оформить заказ",
+            "href": "#"
+        }
+    ]
+},
+{
+    "title": "Оформление заказа",
+    "data": [
+        {
+            "title": "Lorem ipsum dolor sit amet",
+            "icon_name": "#"
+        },
+        {
+            "title": "Сonsecteturadipiscing elit",
+            "icon_name": "#"
+        },
+        {
+            "title": "Sed do eiusmod tempor",
+            "icon_name": "#"
+        },
+        {
+            "title": "Esse cillum dolore eu fugiat",
+            "icon_name": "#"
+        },
+        {
+            "title": "Excepteur sint occaecat cupidatat non proident",
+            "icon_name": "#"
+        }
+    ]
+},
+{
+    "title": "Кошельки",
+    "data": [
+        {
+            "title": "Qiwi wallet",
+            "icon_name": "qiwi",
+            "href": "#"
+        },
+        {
+            "title": "Yandex Money",
+            "icon_name": "yandex-money",
+            "href": "#"
+        },
+        {
+            "title": "Web Money",
+            "icon_name": "web-money",
+            "href": "#"
+        }
+    ]
+},
+{
+    "title": "Контакты",
+    "data": [
+        {
+            "title": "info@ipsum228.com",
+            "icon_name": "email",
+            "href": "mailto:info@ipsum228.com"
+        },
+        {
+            "title": "Мы вконтакте",
+            "icon_name": "vk",
+            "href": "https://vk.com/loremipsum"
+        }
+    ]
+}]
