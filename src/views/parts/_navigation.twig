@@ -1,0 +1,11 @@
+<nav class="navigation hamburger-menu">
+        <input id="menu__toggle" type="checkbox" hidden />
+        <label class="menu__btn" for="menu__toggle">
+        <span></span>
+        </label>
+    <ul class="navigation-list menu__box">
+        {% for item in data[0].data %}
+            <li><a class="navigation-list__link" href="{{ item.href }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+</nav>

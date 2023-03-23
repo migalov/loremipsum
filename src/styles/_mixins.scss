@@ -8,8 +8,14 @@
     grid-template-columns: repeat(#{$columns}, 1fr);
 }
 
+@mixin xxs {
+    @media (#{ functions.maxScreen(xxs) }) {
+        @content;
+    }
+}
+
 @mixin xs {
-    @media (#{ functions.maxScreen(xs) }) {
+    @media (#{ functions.minScreen(xs) }) {
         @content;
     }
 }

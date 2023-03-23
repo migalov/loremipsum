@@ -1,0 +1,48 @@
+@import "./buttons";
+
+.form {
+
+    input {
+        border-radius: 3px;
+        border: 1px solid $white;
+
+    }
+
+    &__input, &__select {
+        background: $white-85;
+        font-size: rem(18px);
+        padding: .55em;
+    }
+
+    &__input, &__select, &__file {
+        color: $dark-6;
+    }
+
+    &__submit {
+        font-size: rem(15px);
+        @extend .btn
+    }
+
+    &__file {
+        font-size: rem(15px);
+        padding: .55em;
+        background: $white;
+        font-weight: 500;
+        border: 2px solid $primary-border;
+        border-radius: 3px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__file, &__submit {
+        text-transform: uppercase;
+    }
+}

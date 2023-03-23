@@ -14,7 +14,19 @@ html {
     @if vars.$enable-smooth-scroll {
         scroll-behavior: smooth;
     }
-    font-size: vars.$font-size-base;
+    font-size: vars.$font-size-base - 3;
+
+    @include sm {
+        font-size: vars.$font-size-base - 2;
+    }
+
+    @include md {
+        font-size: vars.$font-size-base - 1;
+    }
+
+    @include xl {
+        font-size: vars.$font-size-base;
+    }
     overflow-x: hidden;
 }
 
@@ -28,6 +40,8 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     min-width: #{ functions.screen(xxs) };
+
+
 }
 
 main {
@@ -39,6 +53,7 @@ h2,
 h3,
 h4 {
     color: $primary;
+    margin: 0;
 }
 
 a {
