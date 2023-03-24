@@ -90,13 +90,14 @@
     position: fixed;
     top: 0;
     left: -100%;
-    width: 300px;
+    width: 250px;
     height: 100%;
     margin: 0;
     list-style: none;
     background-color: $dark-2;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
+    z-index: 1;
 }
 .menu__item {
     display: block;
