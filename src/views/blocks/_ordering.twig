@@ -6,9 +6,10 @@
             {% for item in data[1].data %}
             <li class="ordering-list-item">
                 <div class="ordering-list-item__border-icon icon icon--primary icon--big icon--{{ item.icon }}"></div>
-                <p class="ordering-list-item__text">{{ item.title | raw }}</p>
+                <h3 class="ordering-list-item__text">{{ item.title | raw }}</p>
             </li>
             {% endfor %}
         </ul>
+        {% include '../parts/_form.twig' %}
     </div>
 </div>
