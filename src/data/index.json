@@ -24,23 +24,23 @@
     "data": [
         {
             "title": "Lorem ipsum dolor sit amet",
-            "icon_name": "#"
+            "icon": "loop"
         },
         {
-            "title": "Сonsecteturadipiscing elit",
-            "icon_name": "#"
+            "title": "Сonsectetura&shy;dipiscing elit",
+            "icon": "percent"
         },
         {
             "title": "Sed do eiusmod tempor",
-            "icon_name": "#"
+            "icon": "add-report"
         },
         {
             "title": "Esse cillum dolore eu fugiat",
-            "icon_name": "#"
+            "icon": "mail"
         },
         {
             "title": "Excepteur sint occaecat cupidatat non proident",
-            "icon_name": "#"
+            "icon": "currency"
         }
     ]
 },
@@ -48,18 +48,18 @@
     "title": "Кошельки",
     "data": [
         {
-            "title": "Qiwi wallet",
-            "icon_name": "qiwi",
+            "title": "QIWI wallet",
+            "icon": "qiwi",
             "href": "#"
         },
         {
             "title": "Yandex Money",
-            "icon_name": "yandex-money",
+            "icon": "yandex-money",
             "href": "#"
         },
         {
             "title": "Web Money",
-            "icon_name": "web-money",
+            "icon": "web-money",
             "href": "#"
         }
     ]
@@ -69,12 +69,12 @@
     "data": [
         {
             "title": "info@ipsum228.com",
-            "icon_name": "email",
+            "icon": "email",
             "href": "mailto:info@ipsum228.com"
         },
         {
             "title": "Мы вконтакте",
-            "icon_name": "vk",
+            "icon": "vk",
             "href": "https://vk.com/loremipsum"
         }
     ]
