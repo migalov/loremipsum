@@ -13,14 +13,9 @@
 @import "components/buttons";
 @import "components/icons";
 @import "components/form";
-@import "components/cols";
 @import "components/container";
 @import "components/navbar";
 
 body {
-   background-color: rgb(100, 100, 100);
-}
-
-.wallpaper {
-   width: 100%;
+   background-color: $white;
 }

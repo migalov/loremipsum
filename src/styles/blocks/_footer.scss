@@ -1,11 +1,8 @@
-@use "../functions";
-
 .footer {
 
     background: $dark-5;
     font-size: 13px;
     padding: 30px 0;
-
 
     & .container {
 
@@ -23,18 +20,12 @@
 
         @include lg {
             grid-template: auto / 3fr 4fr 3fr;
-            // gap: 20px;
         }
 
         @include xl {
             gap: auto;
         }
-
-        // @include lg {
-        //     grid-template: auto / repeat(5, auto);
-        // }
     }
-    
 
     &__copyright {
         font-size: 13px;
@@ -58,6 +49,10 @@
         padding: 0 0 0 rem(30px);
         color: $grey-1;
 
+        &:hover {
+            color: $primary;
+        }
+
         &::before {
             position: absolute;
             top: 50%;
@@ -77,7 +72,6 @@
     }
 
     @include lg {
-        // justify-content: space-between;
         gap: 38px;
 
         &:first-of-type {
@@ -88,17 +82,4 @@
             justify-self: center;
         }
     }
-
-
 }
-
-// .line {
-//     // display: none;
-//     // width: 1px;
-//     // height: 18px;
-//     // background: $grey-1;
-
-//     // @include lg {
-//     //     display: block;
-//     // }
-// }

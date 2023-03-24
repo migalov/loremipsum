@@ -1,17 +1,25 @@
 header {
-    background: $dark-2;
+    background: $dark-2-90;
     padding: rem(34px) 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 
     & .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
+    &--scroll {
+        padding: rem(28px) 0;
+    }
 }
 
 .logo {
+    font: 800 rem(28px) "Raleway";
     display: block;
-    background-image: url('../img/sprites.svg');
-    width: 252px;
-    height: 32px;
+    text-transform: uppercase;
 }
