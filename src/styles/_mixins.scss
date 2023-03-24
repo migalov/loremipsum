@@ -1,13 +1,6 @@
 @use "vars";
 @use "functions";
 
-@mixin create-col($columns, $gap-column: 30px, $gap-row: $gap-column) {
-    display: grid;
-    grid-column-gap: #{$gap-column};
-    grid-row-gap: #{$gap-row};
-    grid-template-columns: repeat(#{$columns}, 1fr);
-}
-
 @mixin xxs {
     @media (#{ functions.maxScreen(xxs) }) {
         @content;
