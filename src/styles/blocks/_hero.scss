@@ -1,10 +1,11 @@
 .hero {
 
-    background: url("../img/bg-hero.jpg") no-repeat center;
+    background-image: url("../img/bg-hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 25% center;
     background-size: cover;
-    min-height: 850px;
-    display: flex;
-    align-items: center;
+    padding: 80px 0 20px;
+    // min-height: 850px;
 
     h1 {
         text-transform: uppercase;
@@ -31,6 +32,16 @@
             margin: 10px 0 0 15px;
         }
     }
+
+    @include sm {
+        background-image: url("../img/bg-hero-tablet.jpg");
+        padding: 140px 0 40px;
+    }
+
+    @include lg {
+        background-image: url("../img/bg-hero-pc.jpg");
+        padding: 200px 0;
+    }
     
 }
 
@@ -38,14 +49,20 @@
 .hero-inner {
     display: flex;
     flex-direction: column;
-    gap: 92px;
-    max-width: 780px;    
+    // gap: 92px;
+    // max-width: 780px;    
+    padding: $grid-gap-column 0;
+    gap: $grid-gap-column;
+
+    @include sm {
+        max-width: 660px;   
+    }
 }
 
 .hero-buttons {
     display: flex;
     flex-direction: column;
-    gap: #{ $grid-gap-column } / 3;
+    gap: calc($grid-gap-column / 3) ;
 
     @include xs {
         flex-direction: row;
