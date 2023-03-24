@@ -1,10 +1,24 @@
 
 .ordering {
 
-    background: url("../img/bg-map-points.png") no-repeat center, $dark-6;
-    background-size: cover;
-    padding: 120px 0 150px;
-    text-align: center;
+    background-image: url("../img/bg-map-mobile.png");
+    background-color: $dark-6;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 150%;
+
+    @include sm {
+        background-image: url("../img/bg-map-tablet.png");
+        background-size: contain;
+    }
+
+    @include md {
+        background-image: url("../img/bg-map-pc.png");
+        background-size: contain;
+    }
+
+    // padding: 120px 0 150px;
+    padding: calc(2*$grid-gap-column) 0;
 
     &__title {
         text-transform: uppercase;
@@ -13,10 +27,14 @@
     }
 
     &__description {
-        font-size: 18px;
+        font-size: rem(18px);
         line-height: 1.2em;
         margin: 20px 0 0 0;
         color: $grey-3;
+    }
+
+    &__title, &__description {
+        text-align: center;
     }
 
 }
@@ -25,11 +43,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: $grid-gap-column;
-    margin: 80px 0 0;
+    gap: calc($grid-gap-column / 3);
+    margin: calc($grid-gap-column);
 
     @include xs {
         flex-direction: row;
+        gap: $grid-gap-column;
     }
 }
 
@@ -79,13 +98,24 @@
         background: $primary;
         border: 5px solid $primary-border;
         margin: 0 auto;
+        transform: scale(.8);
+
+        
+        @include xs {
+            transform: scale(1);
+        };
     }
 
     &__text {
         color: $white;
-        margin: 20px 0 0;
-        font-size: 16px;
+        font-size: rem(16px);
+        font-weight: 400;
         line-height: 19px;
+        text-align: center;
+
+        @include xs {
+            margin: 20px 0 0;
+        };
     }
 
 }
