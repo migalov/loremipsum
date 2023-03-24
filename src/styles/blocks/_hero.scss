@@ -39,20 +39,13 @@
     display: flex;
     flex-direction: column;
     gap: 92px;
-    max-width: 780px;
-    // @include sm {
-    //     padding: 50px 0;
-    // }
-    // @include md {
-    //     padding: 200px 0;
-    // }
-    
+    max-width: 780px;    
 }
 
 .hero-buttons {
     display: flex;
     flex-direction: column;
-    gap: $grid-gap-column / 3;
+    gap: #{ $grid-gap-column } / 3;
 
     @include xs {
         flex-direction: row;

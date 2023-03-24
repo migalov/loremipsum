@@ -1,0 +1,14 @@
+<div class="ordering">
+    <div class="container">
+        <h2 class="ordering__title"><span class="text--white">Оформление</span> заказа</h2>
+        <p class="ordering__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        <ul class="ordering-list">
+            {% for item in data[1].data %}
+            <li class="ordering-list-item">
+                <div class="ordering-list-item__border-icon icon icon--primary icon--big icon--{{ item.icon }}"></div>
+                <p class="ordering-list-item__text">{{ item.title | raw }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
