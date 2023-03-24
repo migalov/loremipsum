@@ -1,26 +1,17 @@
 <footer class="footer">
     <div class="container">
         <h6 class="footer__copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</h6>
-        <div class="line"></div>
+        {# <div class="line"></div> #}
         <ul class="footer-list">
-            <li>
-                <a class="footer__link icon icon--small icon--qiwi" href="#">Qiwi wallet</a>
-            </li>
-            <li>
-                <a class="footer__link icon icon--small icon--yandex-money" href="#">Yandex Money</a>
-            </li>
-            <li>
-                <a class="footer__link icon icon--small icon--web-money" href="#">Web Money</a>
-            </li>
+            {% for item in data[2].data %}
+                <li><a class="footer__link icon icon--small icon--{{ item.icon }}" href="{{ item.href }}">{{ item.title }}</a></li>
+            {% endfor %}
         </ul>
-        <div class="line"></div>
+        {# <div class="line"></div> #}
         <ul class="footer-list">
-            <li>
-                <a class="footer__link icon icon--small icon--email" href="#">info@ipsum228.com</a>
-            </li>
-            <li>
-                <a class="footer__link icon icon--small icon--vk" href="#">Мы вконтакте</a>
-            </li>
+             {% for item in data[3].data %}
+                <li><a class="footer__link icon icon--small icon--{{ item.icon }}" href="{{ item.href }}">{{ item.title }}</a></li>
+            {% endfor %}
         </ul>
     </div>
 </footer>

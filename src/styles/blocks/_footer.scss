@@ -4,23 +4,57 @@
 
     background: $dark-5;
     font-size: 13px;
+    padding: 30px 0;
+
 
     & .container {
-        display: flex;
-        align-items: center;
-        gap: rem(40px);
+
+        display: grid;
+        gap: 30px 0;
+
+        @include xs {
+            grid-template: auto / repeat(2, auto);
+        }
+
+        @include sm {
+            gap: 20px;
+            grid-template: auto / repeat(3, auto);
+        }
+
+        @include lg {
+            grid-template: auto / 3fr 4fr 3fr;
+            // gap: 20px;
+        }
+
+        @include xl {
+            gap: auto;
+        }
+
+        // @include lg {
+        //     grid-template: auto / repeat(5, auto);
+        // }
     }
     
 
     &__copyright {
-        
+        font-size: 13px;
+        line-height: 1.2em;
         font-weight: 400;
         color: $white;
+
+        @include xs {
+            grid-column: span 2;
+        }
+
+        @include sm {
+            grid-column: span 1;
+        }
     } 
 
     &__link {
         position: relative;
         font-size: 13px;
+        letter-spacing: .2px;
         padding: 0 0 0 rem(30px);
         color: $grey-1;
 
@@ -35,12 +69,36 @@
 
 .footer-list {
     display: flex;
-    align-items: center;
-    gap: rem(38px);
+    flex-direction: column;
+    gap: 15px;
+
+    @include md {
+        flex-direction: row;
+    }
+
+    @include lg {
+        // justify-content: space-between;
+        gap: 38px;
+
+        &:first-of-type {
+            justify-self: center;
+        }
+    
+        &:last-of-type {
+            justify-self: center;
+        }
+    }
+
+
 }
 
-.line {
-    width: 1px;
-    height: 18px;
-    background: $grey-1;
-}
+// .line {
+//     // display: none;
+//     // width: 1px;
+//     // height: 18px;
+//     // background: $grey-1;
+
+//     // @include lg {
+//     //     display: block;
+//     // }
+// }
