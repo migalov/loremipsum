@@ -17,6 +17,7 @@ $dark: #22252D;
 
 $grey-1: rgb(195,195,195);
 $grey-2: rgb(61,64,80);
+$grey-2-85: rgb(61,64,80,.85);
 $grey-3: rgb(187,187,187);
 
 $dark-1: rgb(39,39,51);
@@ -34,6 +35,8 @@ $primary-border: #286690;
 $grid-gap-column: 30px;
 $grid-gap-row: 0;
 
+$input-height: 48px;
+
 $breakpoints: (
     retina: 2560px,
     xxl: 1920px,
@@ -42,5 +45,5 @@ $breakpoints: (
     md: 1024px,
     sm: 768px,
     xs: 576px,
-    xxs: 320px
+    xxs: 290px
 );
