@@ -28,7 +28,7 @@ export default () => {
       .pipe(gp.twig({
          data: app.twig.data
       }))
-      .pipe(gulpif(app.isProd, replace('.css', '.min.css')))
+      .pipe(gulpif(app.isProd, replace('main.css', 'main.min.css')))
       .pipe(gulpif(app.isProd, replace('.js', '.min.js')))
       .pipe(gp.size({
          title: "After compression"
