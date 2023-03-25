@@ -30,9 +30,3 @@
         @content;
     }
 }
-    
-@mixin xl {
-    @media (#{ functions.minScreen(xl) }) {
-        @content;
-    }
-}

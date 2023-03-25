@@ -1,11 +1,13 @@
 header {
     background: $dark-2-90;
-    padding: rem(34px) 0;
+    height: rem(100px);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    display: flex;
+    align-items: center;
 
     & .container {
         display: flex;
@@ -14,7 +16,11 @@ header {
     }
 
     &--scroll {
-        padding: rem(28px) 0;
+        height: rem(70px);
+
+        @include lg {
+            height: (70px);
+        }
     }
 }
 

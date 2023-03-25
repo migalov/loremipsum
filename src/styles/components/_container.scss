@@ -9,10 +9,6 @@
     padding-right: calc(#{ vars.$grid-gap-column } / 2);
     margin: auto;
 
-    @media (#{ functions.maxScreen(xl) }) {
-        max-width: #{ functions.screen(lg) };
-    }
-
     @media (#{ functions.maxScreen(lg) }) {
         max-width: #{ functions.screen(md) };
     }
