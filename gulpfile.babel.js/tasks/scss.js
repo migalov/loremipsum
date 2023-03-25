@@ -25,12 +25,12 @@ export default () => {
       .pipe(gp.groupCssMediaQueries())
       .pipe(gulp.dest(path.scss.dest, {sourcemaps: app.isDev}))
       .pipe(gp.size({
-         title: "main.css"
+         title: `Before compression CSS`
       }))
       .pipe(gp.rename({ suffix: ".min" }))
       .pipe(gp.csso())
       .pipe(gulp.dest(path.scss.dest, {sourcemaps: app.isDev}))
       .pipe(gp.size({
-         title: "main.min.css"
+         title: `After compression CSS`
       }));
 }

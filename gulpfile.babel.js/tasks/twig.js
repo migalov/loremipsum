@@ -23,7 +23,7 @@ export default () => {
          }))
       }))
       .pipe(gp.size({
-         title: `Before compression.`
+         title: `Before compression HTML.`
       }))
       .pipe(gp.twig({
          data: app.twig.data
@@ -31,7 +31,7 @@ export default () => {
       .pipe(gulpif(app.isProd, replace('main.css', 'main.min.css')))
       .pipe(gulpif(app.isProd, replace('.js', '.min.js')))
       .pipe(gp.size({
-         title: "After compression"
+         title: `After compression HTML.`
       }))
       .pipe(removeEmptyLines({
          removeComments: true
