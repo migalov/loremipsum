@@ -18,10 +18,10 @@ export default () => {
             message: error.message
          }))
       }))
-      .pipe(gp.size({title: "JS"}))
+      .pipe(gp.size({title: `Before compression JS`}))
       .pipe(gp.babel())
       .pipe(webpack(app.webpack))
       .pipe(gulpif(app.isProd, gp.rename({ suffix: ".min" })))
       .pipe(gulp.dest(path.js.dest, {sourcemaps: app.isDev}))
-      .pipe(gp.size({title: "JS"}))
+      .pipe(gp.size({title: `After compression JS`}))
 }
