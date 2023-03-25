@@ -15,9 +15,9 @@
     @include md {
         background-image: url("../img/bg-map-pc.png");
         background-size: contain;
+        padding: 120px 0 150px;
     }
 
-    // padding: 120px 0 150px;
     padding: calc(2*$grid-gap-column) 0;
 
     &__title {
@@ -49,6 +49,10 @@
     @include xs {
         flex-direction: row;
         gap: $grid-gap-column;
+    }
+
+    @include md {
+        margin:  80px 0 0;
     }
 }
 
