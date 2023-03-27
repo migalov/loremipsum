@@ -8,10 +8,17 @@
     border-radius: .25rem;
     min-width: rem(183px);
     text-align: center;
+    cursor: pointer;
+    @include default-animation-ease;
 
     &--primary {
         background: $primary;
         color: $white;
+        
+
+        &:hover {
+            background: $primary-border;
+        }
     }
 
     &--white {

@@ -30,3 +30,7 @@
         @content;
     }
 }
+
+@mixin default-animation-ease {
+    transition: ease .5s;
+}

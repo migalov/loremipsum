@@ -1,4 +1,4 @@
-header {
+.header {
     background: $dark-2-90;
     height: rem(100px);
     position: fixed;
@@ -8,6 +8,7 @@ header {
     z-index: 1;
     display: flex;
     align-items: center;
+    @include default-animation-ease;
 
     & .container {
         display: flex;
@@ -16,10 +17,14 @@ header {
     }
 
     &--scroll {
-        height: rem(70px);
+        height: rem(60px);
 
         @include lg {
-            height: (70px);
+            height: (60px);
+            & .logo {
+                font-size: rem(26px);
+                @include default-animation-ease;
+            }
         }
     }
 }
