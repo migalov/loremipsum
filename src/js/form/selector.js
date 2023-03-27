@@ -1,6 +1,6 @@
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
-x = document.getElementsByClassName("form-custom-select");
+x = document.getElementsByClassName("lorem-base-form__select-block");
 l = x.length;
 for (i = 0; i < l; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
@@ -76,3 +76,9 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+document.querySelectorAll('.lorem-base-form__select-block').forEach(e => {
+  var elementToMove = document.querySelector('.validation-message');
+  e.appendChild(elementToMove);
+});

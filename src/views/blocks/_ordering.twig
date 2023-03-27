@@ -1,7 +1,11 @@
 <div class="ordering">
     <div class="container">
-        <h2 class="ordering__title"><span class="text--white">Оформление</span> заказа</h2>
-        <p class="ordering__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+    <div class="ordering-inner">
+        <div class="ordering-texts">
+            <h2 class="ordering-texts__title"><span class="text--white">Оформление</span> заказа</h2>
+            <p class="ordering-texts__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        </div>
+
         <ul class="ordering-list">
             {% for item in data[1].data %}
             <li class="ordering-list-item">
@@ -10,6 +14,10 @@
             </li>
             {% endfor %}
         </ul>
+
         {% include '../parts/_form.twig' %}
+    </div>
+        
+        
     </div>
 </div>

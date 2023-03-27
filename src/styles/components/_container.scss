@@ -4,7 +4,7 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     padding-left: calc(#{ vars.$grid-gap-column } / 2);
     padding-right: calc(#{ vars.$grid-gap-column } / 2);
     margin: auto;
