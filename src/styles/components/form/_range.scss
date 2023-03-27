@@ -1,0 +1,47 @@
+.lorem-base-form__range-block {
+    @include md {
+        grid-area: span 1 / span 2;
+    }
+}
+  
+.lorem-base-form__input-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: #d3d3d3;
+    outline: none;
+    transition: opacity .2s;
+    margin: 22px 0 10px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .9;
+    }
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 24px;
+        height: 24px;
+        background: $primary;
+        border: 3px solid $primary-border;
+        border-radius: 12px;
+    }
+
+    &::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #04AA6D;
+    }
+}
+
+.lorem-base-form__input-legend {
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lorem-base-form__range-value {
+    margin: 0 0 0 20px;
+}

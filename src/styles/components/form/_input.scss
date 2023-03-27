@@ -1,0 +1,15 @@
+.lorem-base-form__input-default {
+    background: $white-85;
+    font-size: rem(18px);
+    padding: .55em;
+    border-radius: 3px;
+    border: 1px solid $white;
+    width: 100%;
+    height: $input-height;
+
+    &:hover, &:focus {
+        border: 1px solid $primary;
+        box-shadow: 0px 0px 1px 1px $primary;
+        background: $white;
+    }
+}

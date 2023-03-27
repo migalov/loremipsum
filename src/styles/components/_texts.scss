@@ -9,3 +9,18 @@
         color: $primary
     }
 }
+
+.validation-message {
+    font-size: 13px;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &--has-file {
+        color: $primary;
+    }
+    &--error {
+        color: rgb(255, 93, 93);
+    }
+}

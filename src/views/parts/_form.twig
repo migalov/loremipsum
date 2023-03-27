@@ -1,30 +1,43 @@
-<form class="form" action="">
-    <div class="form-custom-select">
-        <select value="0" name="system_type" id="">
-            <option>Выберите тип системы</option>
-            <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
-            <option value="Nemo enim ipsam">Nemo enim ipsam</option>
-            <option value="Et harum quidem">Et harum quidem</option>
-            <option value="Temporibus autem">Temporibus autem</option>
-            <option value="Itaque earum rerum">Itaque earum rerum</option>
+<form class="lorem-base-form" action="https://formspree.io/f/xzbqaodr" enctype="multipart/form-data" method="POST">
+
+    <div class="lorem-base-form__group lorem-base-form__select-block">
+        <select class="lorem-base-form__select" id="system_type" name="system_type">
+            <option value="">Выберите тип системы</option>
             <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
             <option value="Nemo enim ipsam">Nemo enim ipsam</option>
             <option value="Et harum quidem">Et harum quidem</option>
             <option value="Temporibus autem">Temporibus autem</option>
             <option value="Itaque earum rerum">Itaque earum rerum</option>
         </select>
+        <div class="lorem-base-form__message validation-message"></div>
     </div>
 
-    <input class="form__input" type="email" name="email" placeholder="Ваш e-mail">
-    <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-    <fieldset class="form-range-block">
-        <legend>Sed ut perspiciatis, unde omnis iste natus <span id="percent"></span>%</legend>
-        <input type="range" min="1" max="100" value="75" class="slider" id="myRange">
-    </fieldset>
-    <label class="form-file" for="files">
-        <span class="icon icon--file"></span>
-        <span class="form-file__placeholder">Прикрепить файл<span></label>
-    <input id="files" hidden type="file">
-    <input class="form__submit" type="submit">
+    <div class="lorem-base-form__group">
+        <input class="lorem-base-form__input-default" type="email" id="email" name="email" placeholder="Ваш e-mail">
+        <div class="lorem-base-form__message validation-message"></div>
+    </div>
+
+    <div class="lorem-base-form__group">
+        <input class="lorem-base-form__input-default" type="text" id="name" name="name" placeholder="Ваше имя" minlength="3" maxlength="40">
+        <div class="lorem-base-form__message validation-message"></div>
+    </div>
+    <div class="lorem-base-form__group lorem-base-form__range-block">
+        <legend class="lorem-base-form__input-legend">
+            <span>Sed ut perspiciatis, unde omnis iste natus</span>
+            <span class="lorem-base-form__range-value">75%</span>
+        </legend>
+        <input class="lorem-base-form__input-range" type="range" min="1" max="100" value="75" name="percent" id="percent">
+        <div class="lorem-base-form__message validation-message"></div>
+    </div>
+    
+    <div class="lorem-base-form__group">
+        <label class="lorem-base-form__input-file" for="file" accept=".pdf,.doc,.docx">
+            <input name="file" type="file" id="file" hidden>
+            <span class="lorem-base-form__input-file-title icon icon--file">Прикрепить файл</span>
+        </label>
+        <div class="lorem-base-form__message validation-message"></div>
+    </div>
+
+    <input class="lorem-base-form__input-submit" type="submit">
 
 </form>

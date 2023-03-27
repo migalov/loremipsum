@@ -1,8 +1,7 @@
-let slider = document.getElementById("myRange"),
-    percent = document.getElementById("percent");
+import { form } from "../modules/const";
 
-percent.innerHTML = slider.value;
-
-slider.oninput = function() {
-  percent.innerHTML = this.value;
-}
+form.querySelectorAll(".lorem-base-form__input-range").forEach((e) => {
+  e.addEventListener("input", (_e) => {
+    _e.target.closest(`.lorem-base-form__group`).querySelector(`.lorem-base-form__range-value`).innerHTML = `${e.value}%`
+  })
+})
