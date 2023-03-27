@@ -2,6 +2,7 @@ const pathSrc = `./src`,
       pathDest = `./public`;
 
 export default {
+   src: pathSrc,
    root: pathDest,
    html: {
       src:  `${pathSrc}/html/*.html`,
@@ -9,7 +10,7 @@ export default {
       dest: pathDest
    },
    twig: {
-      src: [`${pathSrc}/views/**/*.twig`, `${pathSrc}/views/!parts/**/*.twig`, `${pathSrc}/!layout*.twig`],
+      src: `${pathSrc}/views/index.twig`,
       watch: `${pathSrc}/views/**/*.twig`,
       dest: pathDest
    },

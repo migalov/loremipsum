@@ -2,7 +2,7 @@
     <div class="container">
     <div class="ordering-inner">
         <div class="ordering-texts">
-            <h2 class="ordering-texts__title"><span class="text--white">Оформление</span> заказа</h2>
+            <h2 class="ordering-texts__title"><span class="text text--white">Оформление</span> заказа</h2>
             <p class="ordering-texts__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
         </div>
 
@@ -10,7 +10,7 @@
             {% for item in data[1].data %}
             <li class="ordering-list-item">
                 <div class="ordering-list-item__border-icon icon icon--primary icon--big icon--{{ item.icon }}"></div>
-                <h3 class="ordering-list-item__text">{{ item.title | raw }}</p>
+                <h3 class="ordering-list-item__text">{{ item.title | raw }}</h3>
             </li>
             {% endfor %}
         </ul>

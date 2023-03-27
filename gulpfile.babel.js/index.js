@@ -14,6 +14,7 @@ import img from './tasks/img.js';
 import font from './tasks/font.js';
 import server from './tasks/server.js';
 import inlineStyle from './tasks/inlineStyle.js';
+import favicons from './tasks/favicons.js';
 
 // Observation
 const watcher = () => {
@@ -27,7 +28,7 @@ const watcher = () => {
 // Build
 const build = gulp.series(
    clear,
-   gulp.parallel(twig, scss, js, img, font),
+   gulp.parallel(twig, scss, js, img, font, favicons),
    inlineStyle
 );
 
@@ -38,7 +39,7 @@ const dev = gulp.series(
 );
 
 // Public Tasks
-export { twig, scss, js, img, font, clear, inlineStyle };
+export { twig, scss, js, img, font, clear, inlineStyle, favicons };
 
 // Assembly
 export default app.isProd ? build : dev;

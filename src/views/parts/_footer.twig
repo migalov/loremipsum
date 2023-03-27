@@ -1,13 +1,11 @@
 <footer class="footer">
     <div class="container">
-        <h6 class="footer__copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</h6>
-        {# <div class="line"></div> #}
+        <h4 class="footer__copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</h4>
         <ul class="footer-list">
             {% for item in data[2].data %}
                 <li><a class="footer__link icon icon--small icon--{{ item.icon }}" href="{{ item.href }}">{{ item.title }}</a></li>
             {% endfor %}
         </ul>
-        {# <div class="line"></div> #}
         <ul class="footer-list">
              {% for item in data[3].data %}
                 <li><a class="footer__link icon icon--small icon--{{ item.icon }}" href="{{ item.href }}">{{ item.title }}</a></li>
@@ -15,4 +13,3 @@
         </ul>
     </div>
 </footer>
-<!-- /.footer -->

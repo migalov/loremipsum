@@ -30,13 +30,13 @@ export default () => {
       }))
       .pipe(gulpif(app.isProd, replace('main.css', 'main.min.css')))
       .pipe(gulpif(app.isProd, replace('.js', '.min.js')))
-      .pipe(gp.size({
-         title: `After compression HTML.`
-      }))
       .pipe(removeEmptyLines({
          removeComments: true
        }))
        .pipe(htmlbeautify({indentSize: 2}))
+       .pipe(gp.size({
+         title: `After compression HTML.`
+      }))
       .pipe(gulp.dest(path.html.dest));
 
 }
