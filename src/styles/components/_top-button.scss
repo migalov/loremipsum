@@ -1,0 +1,50 @@
+@mixin settings-top-button ($width-circle, $width-arrow, $indent) {
+    width: $width-circle;
+    height: $width-circle;
+    border-radius: calc($width-circle / 2);
+    bottom: $indent;
+    right: $indent;
+    &::after {
+        padding: $width-arrow;
+    }
+}
+
+.top-button {
+    position: fixed;
+    background: $white;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    @include default-animation-ease;
+    @include settings-top-button(50px, 6px, calc($grid-gap-column / 2));
+    &:hover {
+        box-shadow: 0px 0px 12px 0px rgba(62, 156, 220);
+    }
+    cursor: pointer;
+    &::after {
+        position: absolute;
+        content: "";
+        border: solid $primary;
+        border-width: 0 6px 6px 0;
+        display: inline-block;
+        top: 50%;
+        -ms-transform: rotate(225deg);
+        transform: rotate(225deg) translateX(-50%) translateY(-50%);
+        left: 50%;
+        transform-origin: 0% 0%;
+    }
+
+    &--show {
+        display: block;
+        opacity: 1;
+    }
+
+    @include xs {
+        @include settings-top-button(60px, 7px, calc($grid-gap-column / 1.5));
+        
+    }
+
+    @include sm {
+        @include settings-top-button(70px, 8px, calc($grid-gap-column));
+    }
+}

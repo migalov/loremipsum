@@ -1,6 +1,6 @@
 .header {
     background: $dark-2-90;
-    height: rem(100px);
+    height:  rem($header-height);
     position: fixed;
     top: 0;
     left: 0;
@@ -17,10 +17,10 @@
     }
 
     &--scroll {
-        height: rem(60px);
+        height:  rem($header-height-scroll);
 
         @include lg {
-            height: (60px);
+            height:  rem($header-height-scroll);
             & .logo {
                 font-size: rem(26px);
                 @include default-animation-ease;
