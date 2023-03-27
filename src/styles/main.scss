@@ -1,8 +1,8 @@
 @import "vars";
 @import "functions";
 @import "mixins";
+@import "normalize";
 @import "base";
-@import "fonts";
 
 @import "blocks/hero";
 @import "blocks/ordering";
@@ -15,7 +15,5 @@
 @import "components/form";
 @import "components/container";
 @import "components/navbar";
-
-body {
-   background-color: $white;
-}
+@import "components/top-button";
+@import "components/anchors";

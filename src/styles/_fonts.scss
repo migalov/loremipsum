@@ -8,6 +8,7 @@ $weights: 400, 600, 700, 900;
                 url('../fonts/lato-' + $weight + '.ttf') format('truetype');
         font-weight: $weight;
         font-style: normal;
+        font-display: swap;
     }
 }
 
@@ -18,4 +19,5 @@ $weights: 400, 600, 700, 900;
             url('../fonts/raleway-800.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
+    font-display: swap;
 }

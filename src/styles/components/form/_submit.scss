@@ -1,9 +1,17 @@
+.lorem-base-form__submit-block {
+    @include md {
+        grid-column: 2 / 3;
+    }
+}
+
 .lorem-base-form__input-submit {
     width: 100%;
     height: $input-height;
     font-size: rem(15px);
     @extend .btn, .btn--primary;
-    @include md {
-        grid-column: 2 / 3;
+
+    & + .lorem-base-form__message {
+        text-align: center;
+        bottom: -25px;
     }
 }

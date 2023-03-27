@@ -1,7 +1,8 @@
 import { form } from "../modules/const"
 
 let classNameBlockField = "lorem-base-form__group",
-    classNameMessage = "validation-message";
+    classNameMessage = "validation-message",
+    messageSubmit = form.querySelector(`.lorem-base-form__input-submit + .${classNameMessage}`);
 
 form.addEventListener("submit", (e) => {
 
@@ -9,6 +10,15 @@ form.addEventListener("submit", (e) => {
 
     let formData = new FormData(form);
     var fieldsEmptyLength = 0;
+
+    const   showColorSuccessMessage = () => {
+                messageSubmit.classList.remove(`${classNameMessage}--error`);
+                messageSubmit.classList.add(`${classNameMessage}--success`);
+            },
+            showColorErrorMessage = () => {
+                messageSubmit.classList.remove(`${classNameMessage}--success`);
+                messageSubmit.classList.add(`${classNameMessage}--error`);
+            };
 
     for (let pair of formData.entries()) {
 
@@ -26,36 +36,42 @@ form.addEventListener("submit", (e) => {
             inputBlock.querySelector(`.${classNameMessage}`).innerHTML = ``;
         }
 
-        if(pair[0] === "file" && document.getElementById(`file`).files[0]?.name === undefined) {
-            inputBlock.querySelector(`.${classNameMessage}`).classList.add(`${classNameMessage}--error`);
-            inputBlock.querySelector(`.${classNameMessage}`).innerHTML = `Выберите файл`;
-            console.log(document.getElementById(`${pair[0]}`).files[0]);
-            fieldsEmptyLength++;
-        }
     }
 
     if (!fieldsEmptyLength > 0) {
+
         fetch(e.target.action, {
             method: form.method,
             body: formData,
             headers: {
                 'Accept': 'application/json'
             }
-          }).then(response => {
+        })
+        .then(response => {
             if (response.ok) {
-              console.log("Thanks for your submission!");
-              form.reset()
+                messageSubmit.innerHTML = `Data sent successfully!`;
+                showColorSuccessMessage();
+                form.reset();
+            } else {
+                response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                    messageSubmit.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                    showColorErrorMessage();
+                } else {
+                    messageSubmit.innerHTML = "Oops! There was a problem submitting your form";
+                    showColorErrorMessage();
+                }
+                })
             }
-          }).catch(error => {
-          //   status.innerHTML = "Oops! There was a problem submitting your form"
-          console.log("Oops! There was a problem submitting your form");
+        })
+        .catch(error => {
+            messageSubmit.innerHTML = "Oops! There was a problem submitting your form";
+            showColorErrorMessage();
         });
     }
-
 });
 
 document.querySelectorAll(`.${classNameBlockField}`).forEach((el) => {
-
     if (el.querySelector(`[type=file]`)?.getAttribute(`id`) !== "file") {
         el.addEventListener("click", _e => {
             _e.target.closest(`.${classNameBlockField}`).classList.remove(`${classNameBlockField}--error`);
