@@ -4,10 +4,12 @@
   "description": "Lorem ipsum dolor sit amet consectetur adipiscing",
   "main": "index.js",
   "author": "Michel Migalov",
+  "homepage": "https://migalov.github.io/loremipsum",
   "scripts": {
     "start": "gulp",
     "build": "gulp --production",
-    "clear": "gulp clear"
+    "clear": "gulp clear",
+    "deploy": "gh-pages -d public"
   },
   "browserslist": [
     "last 3 versions"
@@ -69,5 +71,8 @@
     "sass": "^1.49.9",
     "webpack": "^5.70.0",
     "webpack-stream": "^7.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
