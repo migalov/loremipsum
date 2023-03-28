@@ -33,4 +33,5 @@
     font: 800 rem(28px) "Raleway";
     display: block;
     text-transform: uppercase;
+    @include default-animation-ease;
 }

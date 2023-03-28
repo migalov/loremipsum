@@ -19,20 +19,14 @@
         opacity: .9;
     }
 
-    &::-webkit-slider-thumb {
+    &::-webkit-slider-thumb, &::-moz-range-thumb {
         -webkit-appearance: none;
         appearance: none;
         width: 24px;
         height: 24px;
         background: $primary;
         border: 3px solid $primary-border;
-        border-radius: 12px;
-    }
-
-    &::-moz-range-thumb {
-        width: 25px;
-        height: 25px;
-        background: #04AA6D;
+        border-radius: 30px;
     }
 }
 

@@ -1,6 +1,14 @@
-<header class="header">
+<header
+    data-aos="fade"
+    data-aos-offset="0"
+    data-aos-duration="200" 
+class="header">
     <div class="container">
-        <a href="/" class="logo"><span class="text text--white">LoremIpsum.</span><span class="text text--primary">Net</span></a>
+        <a href="/" class="logo"
+            data-aos="fade-down"
+            data-aos-offset="0"
+            data-aos-duration="500" 
+        ><span class="text text--white">LoremIpsum.</span><span class="text text--primary"><span data-aos-delay="200" data-aos="fade">N</span><span data-aos-delay="400" data-aos="fade">e</span><span data-aos-delay="600" data-aos="fade">t</span></a>
         {% include './_navigation.twig'  %}
     </div>
 </header>
