@@ -4,16 +4,25 @@
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Lorem Ipsum</title>
-        <link rel="canonical" href="https://migalov.github.io/loremipsum/">
-        <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus vitae aliquet nec ullamcorper.">
-        <meta name="keywords" content="sit amet, elit, aliqua, nec, magna, etiam ,elementum, metus, felis, adipiscing.">
-        <meta property="og:title" content="Lorem Ipsum">
-        <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus vitae aliquet nec ullamcorper.">
-        <meta property="og:image" content="./img/logo.svg">
+        <title>{{ data[0].title }}</title>
+        <link rel="canonical" href="{{ data[0].url }}">
+        <meta name="description" content="{{ data[0].description}}">
+        <meta name="keywords" content="{{ data[0].keywords }}">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="{{ data[0].url }}">
+        <meta property="twitter:title" content="{{ data[0].title }}">
+        <meta property="twitter:description" content="{{ data[0].description}}">
+        <meta property="twitter:image" content="{{ data[0].logo }}">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="{{ data[0].title }}">
+        <meta property="og:description" content="{{ data[0].description}}">
+        <meta property="og:image" content="{{ data[0].logo }}">
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Lorem Ipsum - Dolor sit amet consectetur adipiscing ">
-        <meta property="og:url" content="https://migalov.github.io/loremipsum/">
+        <meta property="og:site_name" content="{{ data[0].title }}">
+        <meta property="og:url" content="{{ data[0].url }}">
 
         <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
         <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" data-mce-href="./favicon-32x32.png">
