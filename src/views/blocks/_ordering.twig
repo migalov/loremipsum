@@ -1,17 +1,45 @@
-<div class="ordering">
+
+<div class="ordering"
+    data-aos="fade"
+    data-aos-offset="0"
+    data-aos-duration="500" 
+    data-aos-delay="200"
+>
     <a class="anchor" name="ordering"></a>
     <div class="container">
     <div class="ordering-inner">
         <div class="ordering-texts">
-            <h2 class="ordering-texts__title"><span class="text text--white">Оформление</span> заказа</h2>
-            <p class="ordering-texts__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+            <h2 class="ordering-texts__title"
+                data-aos="zoom-out"
+            ><span class="text text--white">Оформление</span> заказа</h2>
+            <p
+                data-aos="zoom-out"
+                data-aos-offset="50"
+                class="ordering-texts__description"
+            >Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
         </div>
 
-        <ul class="ordering-list">
-            {% for item in data[2].data %}
+        <ul
+            data-aos="zoom-in"
+            data-aos-delay="{{ 200 }}"
+            data-aos-offset="50"
+            class="ordering-list"
+        >
+            {% for key, item in data[2].data %}
             <li class="ordering-list-item">
-                <div class="ordering-list-item__border-icon icon icon--primary icon--big icon--{{ item.icon }}"></div>
-                <h3 class="ordering-list-item__text">{{ item.title | raw }}</h3>
+                <div
+                    data-aos-offset="0"
+                    data-aos="zoom-in"
+                    data-aos-delay="{{ 200+100*(key+1) }}"
+                    data-aos-duration="1000"
+                    class="ordering-list-item__border-icon icon icon--primary icon--big icon--{{ item.icon }}"
+                ></div>
+                <h3
+                    data-aos-offset="50"
+                    data-aos="fade"
+                    data-aos-delay="{{ 400+100*(key+1) }}"
+                    data-aos-duration="1000"
+                class="ordering-list-item__text">{{ item.title | raw }}</h3>
             </li>
             {% endfor %}
         </ul>

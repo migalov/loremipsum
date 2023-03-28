@@ -29,7 +29,7 @@ export default () => {
          data: app.twig.data
       }))
       .pipe(gulpif(app.isProd, replace('.css', '.min.css')))
-      .pipe(gulpif(app.isProd, replace('.js', '.min.js')))
+      .pipe(gulpif(app.isProd, replace('main.js', 'main.min.js')))
       .pipe(removeEmptyLines({
          removeComments: true
        }))

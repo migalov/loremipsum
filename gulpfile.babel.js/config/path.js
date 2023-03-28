@@ -20,9 +20,10 @@ export default {
       dest: `${pathDest}/css`
    },
    js: {
-      src: `${pathSrc}/js/*.js`,
+      src: [`${pathSrc}/js/*.js`],
       watch: `${pathSrc}/js/**/*.js`,
-      dest: `${pathDest}/js`
+      dest: `${pathDest}/js`,
+      srcLibraries: `${pathSrc}/js/libraries/*.js`
    },
    img: {
       src: `${pathSrc}/img/**/*.{jpg,jpeg,png,gif,svg}`,
