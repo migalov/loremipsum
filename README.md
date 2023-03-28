@@ -51,7 +51,6 @@
 
 # Отчеты
 ## Open Graph
-- [Ссылка на валидатор](https://involta.ru/tools/validator-html/?name=https://migalov.github.io/loremipsum/)
 
 ![Open Graph](./demo_materials/metatags.png)
 
@@ -62,6 +61,8 @@
 |![Open Graph](./demo_materials/mobile-version-report-min.jpg)|![Open Graph](./demo_materials/desktop-version-report-min.jpg)|
 
 ## Проверка валидности на БЭМ
+- [Ссылка на валидатор](https://involta.ru/tools/validator-html/?name=https://migalov.github.io/loremipsum/)
+
 [![Watch the video](./demo_materials/preview-video-bem.png)](https://youtu.be/htrCWQ2-Nlo)
 
 ## Отправка данных через форму
