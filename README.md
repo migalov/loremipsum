@@ -74,8 +74,6 @@
 ![Gulp](https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white)
 ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
 
-Список используемых плагинов можно посмотреть в файле  [**package.json**](/package.json)
-
 Открываем командную строку и скачиваем плагины (список используемых плагинов можно посмотреть в файле  [**package.json**](/package.json))
 ```sh
 yarn
