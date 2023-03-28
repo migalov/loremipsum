@@ -60,10 +60,10 @@
 |![Open Graph](./demo_materials/mobile-version-report-min.jpg)|![Open Graph](./demo_materials/desktop-version-report-min.jpg)|
 
 ## Проверка валидности на БЭМ
-[![Watch the video](./demo_materials/preview-video-bem.png)](https://youtu.be/Pgedn9QMjLA)
+[![Watch the video](./demo_materials/preview-video-bem.png)](https://youtu.be/htrCWQ2-Nlo)
 
 ## Отправка данных через форму
-[![Watch the video](./demo_materials/preview-video-formspree.png)](https://youtu.be/L8QUP_OIdD4)
+[![Watch the video](./demo_materials/preview-video-formspree.png)](https://youtu.be/SOtpGcjsEmc)
 
 ---
 ---
