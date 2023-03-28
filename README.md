@@ -51,6 +51,8 @@
 
 # Отчеты
 ## Open Graph
+- [Ссылка на валидатор](https://involta.ru/tools/validator-html/?name=https://migalov.github.io/loremipsum/)
+
 ![Open Graph](./demo_materials/metatags.png)
 
 
