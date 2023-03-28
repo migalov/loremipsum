@@ -1,3 +1,11 @@
+@mixin slider-thumb {
+    width: 24px;
+    height: 24px;
+    background: $primary;
+    border: 3px solid $primary-border;
+    border-radius: 30px;
+}
+
 .lorem-base-form__range-block {
     @include md {
         grid-area: span 1 / span 2;
@@ -18,15 +26,15 @@
     &:hover {
         opacity: .9;
     }
-
-    &::-webkit-slider-thumb, &::-moz-range-thumb {
+    
+    &::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 24px;
-        height: 24px;
-        background: $primary;
-        border: 3px solid $primary-border;
-        border-radius: 30px;
+        @include slider-thumb;
+    }
+
+    &::-moz-range-thumb {
+        @include slider-thumb;
     }
 }
 

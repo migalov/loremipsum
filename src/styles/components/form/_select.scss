@@ -1,5 +1,6 @@
 .lorem-base-form__select-block {
     position: relative;
+    z-index: 1;
     font-size: rem(18px);
     & select {
         display: none;
@@ -50,6 +51,9 @@
     max-height: 150px;
     width: calc(100% - 2px);
     margin-left: 1px;
+    scrollbar-width: 7px;
+    scrollbar-color: $primary $dark-5; 
+    overflow-y: scroll;
 
     &::-webkit-scrollbar {
         padding: 2px 0;
@@ -91,4 +95,32 @@
 
 .select-hide {
     display: none;
+}
+
+.simplebar-track.simplebar-vertical {
+	background-color: #d9d9d9;
+	width: 5px;
+}
+
+.simplebar-content-wrapper {
+	padding-right: 15px;
+}
+
+.simplebar-scrollbar::before {
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 1;
+	background-color: #2871c5;
+	border-radius: 0;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+	top: 0;
+	bottom: 0;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+	opacity: 1;
 }
