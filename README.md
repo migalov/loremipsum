@@ -18,7 +18,7 @@
 
 
 Ссылка на сайт: https://migalov.github.io/loremipsum/
-Альтернативная ссылка: loremipsum-kmg82h5g0-migalov1.vercel.app
+Альтернативная ссылка: https://loremipsum-kmg82h5g0-migalov1.vercel.app
 
 [![https://migalov.github.io/loremipsum/](./src/favicons/android-chrome-192x192.png)](https://migalov.github.io/loremipsum/)
 
