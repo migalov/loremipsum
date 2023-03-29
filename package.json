@@ -10,7 +10,7 @@
     "build": "gulp --production",
     "clear": "gulp clear",
     "deploy": "gh-pages -d public",
-    "bem": "bem-validate ./public/html"
+    "bem": "bem-validate ./public.html"
   },
   "browserslist": [
     "last 3 versions"
