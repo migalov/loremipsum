@@ -5,11 +5,11 @@
         </label>
     <ul class="navigation-list">
         {% for key, item in data[1].data %}
-            <li><a class="navigation-list__link" href="{{ item.href }}"
-                data-aos="fade-down"
+            <li
+                data-aos="fade-left"
                 data-aos-delay="{{ 200+100*(key+1) }}"
                 data-aos-duration="1000"
-            >{{ item.title }}</a></li>
+            ><a class="navigation-list__link" href="{{ item.href }}">{{ item.title }}</a></li>
         {% endfor %}
     </ul>
 </nav>

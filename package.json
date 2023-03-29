@@ -9,7 +9,8 @@
     "start": "gulp",
     "build": "gulp --production",
     "clear": "gulp clear",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public",
+    "bem": "bem-validate ./public/html"
   },
   "browserslist": [
     "last 3 versions"
@@ -31,6 +32,7 @@
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/register": "^7.17.0",
+    "aos": "^2.3.4",
     "browser-sync": "^2.27.7",
     "cz-customizable": "^7.0.0",
     "del": "^6.0.0",
