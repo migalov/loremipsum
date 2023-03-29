@@ -1,6 +1,5 @@
 .header {
     background: $dark-2-90;
-    height:  rem($header-height);
     position: fixed;
     top: 0;
     left: 0;
@@ -8,30 +7,37 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    @include default-animation-ease;
-
-    & .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
 
     &--scroll {
-        height:  rem($header-height-scroll);
+        .header-container {
+            height:  rem($header-height-scroll);
+        }
 
         @include lg {
-            height:  rem($header-height-scroll);
+            .header-container {
+                height:  rem($header-height-scroll);
+            }
             & .logo {
                 font-size: rem(26px);
-                @include default-animation-ease;
             }
         }
     }
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:  rem($header-height);
+    @include default-animation-ease;
 }
 
 .logo {
     font: 800 rem(28px) "Raleway";
     display: block;
     text-transform: uppercase;
+}
+
+.logo-inner {
     @include default-animation-ease;
 }
