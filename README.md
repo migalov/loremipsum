@@ -17,8 +17,8 @@
 [![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/2b7UqUrTs4R8JQoYutlKTu/Test?node-id=0-1)
 
 
-Ссылка на сайт: https://migalov.github.io/loremipsum/
-Альтернативная ссылка: https://loremipsum-kmg82h5g0-migalov1.vercel.app
+  - Ссылка на сайт: https://migalov.github.io/loremipsum/
+  - Альтернативная ссылка: https://loremipsum-kmg82h5g0-migalov1.vercel.app
 
 [![https://migalov.github.io/loremipsum/](./src/favicons/android-chrome-192x192.png)](https://migalov.github.io/loremipsum/)
 
