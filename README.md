@@ -1,103 +1,100 @@
-# Верстка страницы макета Lorem Ipsum
+# Page layout Lorem Ipsum
 
+## Content:
+   - [Main tasks](#completed-main-tasks)
+   - [Additional tasks](#additional-tasks)
+   - [Languages and tools](#languages-and-tools)
+   - [Reports](#reports)
+     - [Open Graph](#open-graph)
+     - [Validity check on BEM](#validity check-on-BEM)
+     - [Actual site performance](#actual-site-performance)
+   - [Local development](#local-development)
 
-
-## Содержание:
-  - [Основные задачи](#выполнены-основные-задачи)
-  - [Дополнительные задачи](#дополнительные-задачи)
-  - [Языки и инструменты](#языки-и-инструменты)
-  - [Отчеты](#отчеты)
-    - [Open Graph](#open-graph)
-    - [Проверка валидности на БЭМ](#проверка-валидности-на-бэм)
-    - [Фактическая производительность сайта](#фактическая-производительность-сайта)
-  - [Локальная разработка](#локальная-разработка)
-
-Макет: 
+Layout:
 
 [![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/2b7UqUrTs4R8JQoYutlKTu/Test?node-id=0-1)
 
-
-  - Ссылка на сайт: https://migalov.github.io/loremipsum/
-  - Альтернативная ссылка: https://loremipsum-kmg82h5g0-migalov1.vercel.app
+   - Website link: https://migalov.github.io/loremipsum/
+   - Alternative link: https://loremipsum-kmg82h5g0-migalov1.vercel.app
 
 [![https://migalov.github.io/loremipsum/](./src/favicons/android-chrome-192x192.png)](https://migalov.github.io/loremipsum/)
 
-## Выполнены основные задачи:
+## Main tasks completed:
 
-- Сайт был адаптирован под мобильные устройства шириной не менее 320px и планшеты.
-- В вёрстке соблюдалась методология БЭМ.
-- Использована стратегия Mobile First
-- Большинство блоков построено на Flex и Grid
-- Стили написаны при помощи препроцессора SASS в диалекте SCSS
-- Предусмотрено количество пунктов и полей формы в блоке "Оформление заказа"
-- Соблюдена кроссбраузерность.
-- Шапка сайта зафиксирована наверху страницы
-- Сборка выгружает в папку с сайтом WebP-изображения, что значительно уменьшает время загрузки страницы
-- Опубликовано в Github Pages (очень помогает плагин [gh-pages](https://www.npmjs.com/package/gh-pages))
+- The site has been adapted for mobile devices with a width of at least 320px and tablets.
+- The layout followed the BEM methodology.
+- Mobile First strategy used
+- Most blocks are built on Flex and Grid
+- Styles are written using the SASS preprocessor in the SCSS dialect
+- The number of items and form fields in the “Checkout” block is provided
+- Cross-browser compatible.
+- The site header is fixed at the top of the page
+- The assembly uploads WebP images to the folder with the site, which significantly reduces page loading time
+- Published in Github Pages (the plugin [gh-pages](https://www.npmjs.com/package/gh-pages) helps a lot)
 
 
-### Дополнительные задачи
-- После скроллинга шапка и логотип слегка уменьшаются в размерах
-- Пункт меню "Оформление заказа" прямо ведет к соответствующему блоку, учитывая размер шапки.
-- После небольшого скроллинга появляется кнопка, при нажатии которой пользователь плавно вернется на начало страницы
-- Элементам сайта задана анимация (была задействована библиотека [AOS](https://michalsnik.github.io/aos/))
-- Форма отправки заказа способна отправлять данные (данные попадают на аккаунт в [Formspree](https://formspree.io/) (увы с приложенным файлом сервис отказывается принимать файл вместе с данными формы и сам файл :worried:))
+### Additional tasks
+- After scrolling, the header and logo are slightly reduced in size
+- The menu item "Checkout" directly leads to the corresponding block, taking into account the size of the header.
+- After a little scrolling, a button appears, when clicked, the user will smoothly return to the top of the page
+- Animation was set for the site elements (the [AOS](https://michalsnik.github.io/aos/) library was used)
+- The order submission form is capable of sending data (the data goes to the account in [Formspree](https://formspree.io/) (alas, with the attached file, the service refuses to accept the file along with the form data and the file itself :worried:))
 
 ---
 ---
 
-# Языки и инструменты
+# Languages and tools
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)![Gulp](https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white)
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,babel,gulp,figma,vscode)](https://skillicons.dev)
 
-# Отчеты
+# Reports
 ## Open Graph
 
 ![Open Graph](./demo_materials/metatags.png)
 
 
-## Фактическая производительность сайта
-|Мобильная версия|Десктопная версия|
-|----------------|-------------------------------|
+## Actual site performance
+|Mobile version|Desktop version|
+|----------------|------------------------------|
 |![Open Graph](./demo_materials/mobile-version-report-min.jpg)|![Open Graph](./demo_materials/desktop-version-report-min.jpg)|
 
-## Проверка валидности на БЭМ
-- [Ссылка на валидатор](https://involta.ru/tools/validator-html/?name=https://migalov.github.io/loremipsum/)
+## Validity check on BEM
+- [Link to validator](https://involta.ru/tools/validator-html/?name=https://migalov.github.io/loremipsum/)
 
 [![Watch the video](./demo_materials/preview-video-bem.png)](https://youtu.be/htrCWQ2-Nlo)
 
-## Отправка данных через форму
+## Submitting data via form
 [![Watch the video](./demo_materials/preview-video-formspree.png)](https://youtu.be/SOtpGcjsEmc)
 
 ---
 ---
 
-# Локальная разработка
-Чтобы установить сборку с сайтом необходимо установить у себя на компьютере:
+# Local development
+To install the assembly with the site you need to install on your computer:
 
 [![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en)
 [![Gulp](https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white)](https://gulpjs.com/docs/en/getting-started/quick-start)
 [![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)](https://yarnpkg.com/)
 
-Открываем командную строку и скачиваем плагины (список используемых плагинов можно посмотреть в файле  [**package.json**](/package.json))
+Open the command line and download the plugins (the list of used plugins can be found in the file [**package.json**](/package.json))
 ```sh
 yarn
 ```
 
 
-## Запуск режима разработки:
+## Start development mode:
 
 ```sh
 yarn start
 ```
 
-## Сборка проекта
+## Building the project
 
 ```sh
 yarn build
 ```
 
-## Деплой сборанного проекта
+## Deploy the assembled project
 ```sh
 yarn deploy
 ```
